@@ -61,5 +61,38 @@ Built using a fusion of **Conversational AI**, **Text-to-Speech**, **Generative 
 
 ---
 
-## 📁 Folder Structure (Sample)
+
+---
+
+## 🚀 Future Work
+
+- Real-time input via Whisper + GPT + TTS pipeline
+- Emotion detection via facial expression / voice tone
+- Multi-agent group conversation mode
+- Memory-based persistent avatars
+- Explainable AI dialogue (ethical alignment questions)
+
+---
+
+## 👥 Team & Roles
+
+- **Conversational AI & Prompts** – [Your Name]
+- **Unity & Scene Integration** – [Teammate Name]
+- **Voice & Audio Mixing** – [Teammate Name]
+- **Avatar Design & Lip Sync** – [Teammate Name]
+
+---
+
+## 📝 Submission Info
+
+- **Challenge:** AI Video Generation Challenge – Visionary Leaders Edition  
+- **Project Title:** *Symposium: Talking to Virtual Minds*  
+- **Duration:** 60–90 seconds  
+- **Category:** AI + Conversational Interfaces + Embodied Agents  
+
+---
+
+## 📬 Contact
+Team name: SimLink
+
 

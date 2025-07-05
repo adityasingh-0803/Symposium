@@ -10,7 +10,7 @@ Built using a fusion of **Conversational AI**, **Text-to-Speech**, **Generative 
 
 ## 🎥 Project Demo
 
-🔗 **[Watch the Demo Video (60–90s)](https://drive.google.com/file/d/1253jno2u23covNzBAOvY9_V8qYdhKO1m/view?usp=sharing)**  
+🔗 **[Watch the Setup Video (60–90s)](https://drive.google.com/file/d/1253jno2u23covNzBAOvY9_V8qYdhKO1m/view?usp=sharing)**  
 Watch the immersive experience here:  
 **[▶️ Project Demo](https://drive.google.com/drive/folders/15-KTWxOjcAL3m29lORFIZZwGHejZDLgs?usp=sharing)**
 

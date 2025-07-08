@@ -14,10 +14,7 @@ Built using a fusion of **Conversational AI**, **Text-to-Speech**, **Generative 
 Watch the immersive experience here:  
 **[▶️ Project Demo](https://drive.google.com/drive/folders/15-KTWxOjcAL3m29lORFIZZwGHejZDLgs?usp=sharing)**
 
-
 🕹️ A complete walkthrough of the immersive experience, from emotion selection to avatar response and real-time background changes.
-
-
 
 ---
 
@@ -35,13 +32,16 @@ Watch the immersive experience here:
 
 | Component             | Tools / Models Used                          |
 |-----------------------|----------------------------------------------|
-| Natural Language Gen  | GPT-4 / Claude                               |
-| Text-to-Speech (TTS)  | ElevenLabs / Replica Studios                 |
-| Image Generation      | Midjourney / DALL·E                          |
-| Avatar Creation       | ReadyPlayerMe / Mixamo                       |
-| Lip Sync              | SALSA LipSync / Oculus LipSync              |
-| Background Switching  | Unity Timeline + GPT theme segmentation     |
-| Audio Mixing          | Unity Audio Mixer / Audacity                |
+| Natural Language Gen  | Convai (uses gemini)                         |
+| Text-to-Speech (TTS)  | Convai built-in TTS                          |
+| Avatar Creation       | Convai Character Creator                     |
+| Lip Sync              | Convai built-in Lip Sync                     |
+| Background Switching  | Unity Timeline + Trigger-Based Themes        |
+| Audio Mixing          | Unity Audio Mixer                            |
+| Game Engine	          | Unity 3D (likely URP pipeline)               |
+| Deployment	          | Android                                      |
+| Voice Input (ASR)	    | Convai built-in Automatic Speech Recognition |        |
+| UI/UX Interface      	| Unity UI / TextMeshPro                       |
 
 ---
 
@@ -57,14 +57,32 @@ Watch the immersive experience here:
 
 ## ⚙️ How It Works
 
-1. **User selects an emotion** (e.g., hopeful, sad, curious).
-2. GPT generates an **emotion-matched speech** for a chosen AI leader.
-3. ElevenLabs produces the **spoken voice** with tone control.
-4. Unity avatar plays the voice, **synchronized with lip movement**.
-5. Backgrounds change dynamically, powered by GPT-extracted themes.
+1. **User selects an emotion**
+   - Options like `hopeful`, `sad`, `curious`, etc.
+   - Sets the tone for the conversation.
 
----
+2. **Emotion-Matched Speech Generation**
+   - The selected emotion is sent to a prompt-engineered GPT (via Convai or OpenAI).
+   - GPT generates a **contextual reply** tailored to:
+     - The selected AI persona (e.g., Elon Musk).
+     - The user's emotion and query.
 
+3. **Voice Synthesis via ElevenLabs**
+   - The GPT output is sent to **ElevenLabs** with tone control parameters.
+   - ElevenLabs returns a **high-fidelity voice response** that reflects the chosen emotion.
+
+4. **Avatar Playback in Unity**
+   - Unity avatar plays the voice with:
+     - **Lip sync** animations driven by audio.
+     - Matching facial expressions and body gestures.
+   - Subtitles displayed using **TextMeshPro**.
+
+5. **Dynamic Background Changes**
+   - GPT extracts contextual **themes** (e.g., Mars, Tesla, Twitter).
+   - Unity switches **background environments** using:
+     - Triggered animations
+     - Timeline sequences
+     - Shader changes or post-processing volumes.
 
 ---
 
@@ -75,15 +93,6 @@ Watch the immersive experience here:
 - Multi-agent group conversation mode
 - Memory-based persistent avatars
 - Explainable AI dialogue (ethical alignment questions)
-
----
-
-## 👥 Team & Roles
-
-- **Conversational AI & Prompts** – [Your Name]
-- **Unity & Scene Integration** – [Teammate Name]
-- **Voice & Audio Mixing** – [Teammate Name]
-- **Avatar Design & Lip Sync** – [Teammate Name]
 
 ---
 
